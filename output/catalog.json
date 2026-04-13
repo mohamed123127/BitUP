@@ -1,0 +1,21 @@
+{
+  "extracted_data": {
+    "type": "valve DN100",
+    "pressure": "40 bar",
+    "material": "steel",
+    "tensors": [
+      "temperature"
+    ]
+  },
+  "suppliers": [],
+  "tco": {},
+  "business_plan": {},
+  "ml_features": {
+    "sensors_used": [
+      "temperature"
+    ],
+    "feature_vector_size": 5,
+    "model_type": "random_forest",
+    "accuracy": 0.9047619047619048
+  }
+}

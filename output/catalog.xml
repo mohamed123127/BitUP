@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog>
+  <product>{'type': 'valve DN100', 'pressure': '40 bar', 'material': 'steel', 'tensors': ['temperature']}</product>
+  <suppliers/>
+  <tco>{}</tco>
+  <business_plan>{}</business_plan>
+</catalog>
