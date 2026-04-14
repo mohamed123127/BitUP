@@ -7,10 +7,12 @@
     <h1>INDUSTRIE IA - CATALOGUE</h1>
 
     <h2>Product</h2>
-    <pre>{'type': 'valve DN100', 'pressure': '40 bar', 'material': 'steel', 'tensors': ['temperature']}</pre>
+    <pre>{'type': 'valve DN100', 'material': 'unknown', 'tensors': ['temperature', 'pressure'], 'dimensions': {'DN': {'value': 100.0, 'unit': 'mm', 'confidence': 1.0}, 'longueur_totale': {'value': None, 'unit': 'mm', 'confidence': 0}, 'hauteur': {'value': 18.0, 'unit': 'mm', 'confidence': 0.9}, 'epaisseur_paroi': {'value': 3.6, 'unit': 'mm', 'confidence': 0.8}, 'poids': {'value': 4.6, 'unit': 'kg', 'confidence': 1.0}}, 'materials': {'corps': {'value': None, 'norme': None, 'confidence': 1.0}, 'joint_siege': {'value': None, 'norme': None, 'confidence': 0.7}, 'fixations': {'value': None, 'norme': None, 'confidence': 0.6}}, 'tolerances': {'generale': {'value': None, 'unit': '', 'confidence': 1.0}, 'surface_Ra': {'value': 12.5, 'unit': 'μm', 'confidence': 0.9}, 'planeite': {'value': 0.6, 'unit': 'mm', 'confidence': 0.8}}, 'pressure': {'PN_nominal': {'value': 16.0, 'unit': 'bar', 'confidence': 1.0}, 'PS_service': {'value': 16.0, 'unit': 'bar', 'confidence': 0.9}, 'pression_test': {'value': 24.0, 'unit': 'bar', 'confidence': 1.0}}, 'temperature': {'T_min': {'value': -10.0, 'unit': '°C', 'confidence': 0.8}, 'T_max': {'value': 400.0, 'unit': '°C', 'confidence': 0.9}}, 'confidence': {'dimensions': 84, 'materials': 80, 'tolerances': 90, 'pressure': 97, 'temperature': 85}, 'specs': {'dimensions': {'DN': {'value': 100, 'unit': 'mm', 'confidence': 1.0}, 'longueur_totale': {'value': None, 'unit': 'mm', 'confidence': 0.0}, 'hauteur': {'value': 18, 'unit': 'mm', 'confidence': 0.9}, 'epaisseur_paroi': {'value': 3.6, 'unit': 'mm', 'confidence': 0.8}, 'poids': {'value': 4.6, 'unit': 'kg', 'confidence': 1.0}}, 'materials': [{'materiel': 'Acier au Carbone', 'designation': 'P250GH (1.0460)', 'confidence': 1.0}, {'materiel': 'Inox (Boulonnerie)', 'designation': 'A2-70 (Acier Inox)', 'confidence': 0.7}, {'materiel': 'Graphite (Joint)', 'designation': 'Graphite expansé', 'confidence': 0.6}], 'tolerances': {'generale': {'value': 'm', 'norme': 'ISO 2768-mK', 'confidence': 1.0}, 'surface_Ra': {'value': 12.5, 'unit': 'μm', 'confidence': 0.9}, 'planeite': {'value': 0.6, 'unit': 'mm', 'confidence': 0.8}}, 'pressure': {'PN_nominal': {'value': 16, 'unit': 'bar', 'confidence': 1.0}, 'PS_service': {'value': 16, 'unit': 'bar', 'confidence': 0.9}, 'pression_test': {'value': 24, 'unit': 'bar', 'confidence': 1.0}}, 'temperature': {'T_min': {'value': -10, 'unit': '°C', 'confidence': 0.8}, 'T_max': {'value': 400, 'unit': '°C', 'confidence': 0.9}}, 'confidence': {'dimensions': 0.84, 'materials': 0.8, 'tolerances': 0.9, 'pressure': 0.97, 'temperature': 0.85}, 'source_pages': [1, 2, 3]}, 'pieces': [{'name': 'Pièce unknown', 'length': 100.0, 'width': 18.0, 'position': [0.0, 0.0], 'angle': 0.0}]}</pre>
 
     <h2>Suppliers</h2>
     <ul>
+    
+        <li>Hunter supplier for unknown - France</li>
     
     </ul>
 
@@ -21,6 +23,6 @@
     <pre>{}</pre>
 
     <h2>AI Monitoring</h2>
-    <pre>{'sensors_used': ['temperature'], 'feature_vector_size': 5, 'model_type': 'random_forest', 'accuracy': 0.9047619047619048}</pre>
+    <pre>{'sensors_used': ['temperature', 'pressure'], 'feature_vector_size': 11, 'model_type': 'random_forest', 'accuracy': 0.9795918367346939}</pre>
 </body>
 </html>
