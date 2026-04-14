@@ -18,28 +18,24 @@ class Supplier(TypedDict):
 # =========================
 class TCO(TypedDict):
     initial_cost: float
-    yearly_costs: List[float]
-    total_10y: float
-    path_to_excel: str
+    maintenance_cost_annual: float
+    energy_cost_annual: float
+    inflation_rate: float
+    total_10_year_cost: float
+    currency: str
+
 
 # =========================
 # BUSINESS PLAN MODEL
 # =========================
 class BusinessPlan(TypedDict):
-    revenue: float
-    profit: float
     roi: float
-    npv: float
-    break_even_year: Optional[int]
-    projections: List[Dict]
-    path_to_pdf: str
-    path_to_excel: str
-    executive_summary: str
-    project_description: Dict[str, str]
-    market_analysis: Dict[str, str]
+    van: float
+    payback_period_years: float
+    risk_level: Literal["low", "medium", "high"]
     swot: Dict[str, List[str]]
-    recommendations: str
-    conclusion: str
+    revenue_projection_3y: List[float]
+
 
 # =========================
 # ML / DIGITAL TWIN MODEL
@@ -80,13 +76,8 @@ class IndustryState(TypedDict):
     # INPUT
     pdf_path: str
 
-    # EXTRACTION DATA (Sped to top-level for module access)
-    product_name: str
-    specs: Dict
-    deal: Dict
-
     # MODULE 1 - EXTRACTION
-    extracted_data: Dict
+    extracted_data: Dict[str, str]
 
     # MODULE 2 / 3 - CAD + VIDEO
     dxf_path: Optional[str]
