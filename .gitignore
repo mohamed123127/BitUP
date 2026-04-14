@@ -1,0 +1,26 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env
+
+# Output and build artifacts
+output/
+*.dxf
+*.pdf
+*.xlsx
+*.html
+*.json
+
+# Local IDE settings
+.vscode/
+
+# Input sample files
+inputs/*.pdf
+
+# Model / data artifacts
+*.pkl
