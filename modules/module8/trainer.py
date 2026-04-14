@@ -117,7 +117,12 @@ def save_model(model, features, path="./modules/module8/models/random_forest.pkl
 def train_pipeline(state: IndustryState):
     # Load
     df = load_dataset()
-    selected_groups = state["extracted_data"]["tensors"]  
+    # Get tensors from specs (with fallback to the old location or empty list)
+    specs = state.get("specs", {})
+    if not specs and "extracted_data" in state:
+        specs = state["extracted_data"].get("specs", state["extracted_data"])
+    
+    selected_groups = specs.get("tensors", [])
     # Feature selection
     selected_features = build_features(df, selected_groups)
 
