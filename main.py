@@ -16,6 +16,3 @@ async def run_pipeline(file_path: str):
 
     print("\n✅ FINAL RESULT:")
     print(result)
-
-if __name__ == "__main__":
-    asyncio.run(run_pipeline("./input/TP_WAMS_AOS_5.pdf"))
